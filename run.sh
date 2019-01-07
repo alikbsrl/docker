@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# Check and create dumps folder
+[ -d dumps ] || mkdir dumps
 # Build docker image
 echo "Docker image creation started - `date`"
 docker build -t oom:latest . > /dev/null
