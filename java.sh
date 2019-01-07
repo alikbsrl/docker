@@ -5,7 +5,7 @@ logf=$(hostname)-$(date +%Y-%m-%dT-%H-%M-%S).dump
 # log folder
 logdir="/dumps/"
 # log folder max size
-maxdirsize=19588
+maxdirsize=10000000000
 
 start()
 { # this function is starting java app
