@@ -9,7 +9,7 @@ maxdirsize=19588
 
 start()
 { # this function is starting java app
-/usr/bin/java -server -Xms64M -Xmx64M -Dspring.profiles.active=default -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$logdir$logf -XX:OnOutOfMemoryError="java.sh logr" -cp /SimulateOutOfMemoryError.jar test.oom.SimulateOutOfMemoryError
+/usr/bin/java -server -Xms64M -Xmx64M -Dspring.profiles.active=default -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=$logdir$logf -XX:OnOutOfMemoryError="java.sh logr" -cp /SimulateOutOfMemory.jar test.oom.SimulateOutOfMemory
 }
 
 logr()
